@@ -1,4 +1,4 @@
-# Mi Primera Página Web 🚀
+# Página Web 🚀
 
 Una página web moderna y responsiva creada para aprender desarrollo web y deployment en la nube.
 
@@ -76,10 +76,6 @@ Una página web moderna y responsiva creada para aprender desarrollo web y deplo
 - [ ] Blog section
 - [ ] Modo oscuro/claro
 - [ ] PWA capabilities
-
-## 📞 Contacto
-
-Personaliza la información de contacto en el archivo `index.html` líneas 149-159.
 
 ---
 
