@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web - Portafolio de Desarrollador</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portafolio de desarrollador web junior. HTML, CSS, JavaScript y proyectos de aprendizaje.">
+    <meta name="keywords" content="desarrollador web, HTML, CSS, JavaScript, portafolio, programador">
+    <meta name="author" content="Tu Nombre">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mi Primera Página Web - Portafolio">
+    <meta property="og:description" content="Portafolio de desarrollador web junior con proyectos de HTML, CSS y JavaScript">
+    <meta property="og:url" content="https://tu-sitio.com">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Mi Primera Página Web - Portafolio">
+    <meta property="twitter:description" content="Portafolio de desarrollador web junior con proyectos de HTML, CSS y JavaScript">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Mi Portafolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">¡Hola! Soy <span class="highlight">Fabian</span></h2>
+                <p class="hero-description">
+                    Bienvenido a mi primera página web. Estoy aprendiendo desarrollo web 
+                    y esta es mi práctica para subir proyectos a la nube.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="mostrarMensaje()">Ver mis proyectos</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contacto')">Contactar</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-animation">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Soy un apasionado del desarrollo web que está comenzando su journey 
+                            en el mundo de la programación. Me encanta aprender nuevas tecnologías 
+                            y crear proyectos que resuelvan problemas reales.
+                        </p>
+                        <div class="skills">
+                            <h3>Tecnologías que estoy aprendiendo:</h3>
+                            <div class="skill-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">Cloud Deployment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Horas de Código</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Proyectos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="1">0</div>
+                            <div class="stat-label">Café por día</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">🌐</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mi Primera Página Web</h3>
+                            <p>Una página web responsiva creada con HTML, CSS y JavaScript.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">🎮</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Juego de Memoria</h3>
+                            <p>Un juego simple para practicar JavaScript y manipulación del DOM.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img">📝</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Lista de Tareas</h3>
+                            <p>Una aplicación de lista de tareas con localStorage.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>¡Hablemos!</h3>
+                        <p>Si quieres contactarme para algún proyecto o simplemente charlar sobre programación, aquí están mis datos:</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="icon">📧</span>
+                                <span>tu-email@ejemplo.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="icon">💼</span>
+                                <span>LinkedIn: /tu-perfil</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="icon">🐙</span>
+                                <span>GitHub: /tu-usuario</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="enviarMensaje(event)">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mi Portafolio. Hecho con ❤️ y mucho café.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
